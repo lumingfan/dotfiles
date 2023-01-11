@@ -15,7 +15,7 @@ Making Local Customizations
 
 You can make local customizations for some programs by editing these files:
 
-* `vim` : `~/.vimrc_local`
+* `vim` : `~/.vimrc_local`: use PlugInstall in vim command mode to install pluggins
 * `emacs` : `~/.emacs_local`
 * `zsh` / `bash` : `~/.shell_local_before` run first
 * `zsh` : `~/.zshrc_local_before` run before `.zshrc`
