@@ -105,6 +105,8 @@
 
 [user]
 	useConfigOnly = true
+	email = 2507550027@qq.com
+	name = lumingfan
 
 [http]
 	cookieFile = ~/.gitcookies

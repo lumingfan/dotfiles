@@ -7,7 +7,7 @@ Plug 'tpope/vim-sensible'
 Plug 'junegunn/seoul256.vim'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
-Plug 'preservim/nerdtree'
+
 Plug 'mileszs/ack.vim'
 Plug 'frazrepo/vim-rainbow'
 Plug 'altercation/vim-colors-solarized'
@@ -146,7 +146,7 @@ else
     highlight SignColumn ctermbg=234
     highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
     highlight StatusLineNC cterm=bold ctermfg=245 ctermbg=235
-    let g:lightline = {'colorscheme': 'onedark'}
+    let g:lightline = {'colorscheme': 'solarized'}
     highlight SpellBad cterm=underline
     " patches
     highlight CursorLineNr cterm=NONE

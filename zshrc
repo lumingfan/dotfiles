@@ -1,6 +1,12 @@
 # Functions
 source ~/.shell/functions.sh
 
+# syntax highlight
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
 # Allow local customizations in the ~/.shell_local_before file
 if [ -f ~/.shell_local_before ]; then
     source ~/.shell_local_before
@@ -47,3 +53,4 @@ if [ -f ~/.shell_private ]; then
     source ~/.shell_private
 fi
 
+source /root/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
