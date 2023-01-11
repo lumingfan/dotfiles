@@ -24,13 +24,3 @@ You can make local customizations for some programs by editing these files:
 * `git` : `~/.gitconfig_local`
 * `hg` : `~/.hgrc_local`
 * `tmux` : `~/.tmux_local.conf`
-
-License
--------
-
-Copyright (c) 2013-2022 Anish Athalye. Released under the MIT License. See
-[LICENSE.md][license] for details.
-
-[dotfiles-local]: https://github.com/anishathalye/dotfiles-local
-[dotbot]: https://github.com/anishathalye/dotbot
-[license]: LICENSE.md
