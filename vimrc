@@ -1,4 +1,27 @@
+" plugins will be downloaded under the specified directory.
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+
+" Declare the list of plugins.
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-sensible'
+Plug 'junegunn/seoul256.vim'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-fugitive'
+Plug 'preservim/nerdtree'
+Plug 'mileszs/ack.vim'
+Plug 'frazrepo/vim-rainbow'
+Plug 'altercation/vim-colors-solarized'
+Plug 'joshdick/onedark.vim'
+Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
+" " List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+
 set nocompatible " not vi compatible
+
 
 "------------------
 " Syntax and indent
@@ -12,29 +35,6 @@ augroup CursorLineOnlyInActiveWindow
     autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
     autocmd WinLeave * setlocal nocursorline
 augroup END
-
-" vim can autodetect this based on $TERM (e.g. 'xterm-256color')
-" but it can be set to force 256 colors
-" set t_Co=256
-if has('gui_running')
-    colorscheme solarized
-    let g:lightline = {'colorscheme': 'solarized'}
-elseif &t_Co < 256
-    colorscheme default
-    set nocursorline " looks bad in this mode
-else
-    set background=dark
-    let g:solarized_termcolors=256 " instead of 16 color with mapping in terminal
-    colorscheme solarized
-    " customized colors
-    highlight SignColumn ctermbg=234
-    highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
-    highlight StatusLineNC cterm=bold ctermfg=245 ctermbg=235
-    let g:lightline = {'colorscheme': 'dark'}
-    highlight SpellBad cterm=underline
-    " patches
-    highlight CursorLineNr cterm=NONE
-endif
 
 filetype plugin indent on " enable file type detection
 set autoindent
@@ -85,7 +85,6 @@ set nofoldenable " disable folding by default
 map <C-a> <Nop>
 map <C-x> <Nop>
 nmap Q <Nop>
-
 " disable audible bell
 set noerrorbells visualbell t_vb=
 
@@ -132,10 +131,60 @@ command -nargs=0 Sudow w !sudo tee % >/dev/null
 "---------------------
 " Plugin configuration
 "---------------------
+" color-solarized
+if has('gui_running')
+    colorscheme solarized
+    let g:lightline = {'colorscheme': 'solarized'}
+elseif &t_Co < 256
+    colorscheme default
+    set nocursorline " looks bad in this mode
+else
+    set background=light
+    let g:solarized_termcolors=256 " instead of 16 color with mapping in terminal
+    colorscheme solarized
+    " customized colors
+    highlight SignColumn ctermbg=234
+    highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
+    highlight StatusLineNC cterm=bold ctermfg=245 ctermbg=235
+    let g:lightline = {'colorscheme': 'onedark'}
+    highlight SpellBad cterm=underline
+    " patches
+    highlight CursorLineNr cterm=NONE
+endif
 
+
+
+" light
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'readonly', 'filename', 'modified', 'helloworld' ] ]
+      \ },
+      \ 'component': {
+      \   'helloworld': 'Hello, world!'
+      \ },
+      \ }
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" rainbow
+let g:rainbow_active = 1
 " nerdtree
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFind<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
 
 " buffergator
 let g:buffergator_suppress_keymaps = 1
@@ -223,4 +272,5 @@ set tags^=.git/tags;~
 let $LOCALFILE=expand("~/.vimrc_local")
 if filereadable($LOCALFILE)
     source $LOCALFILE
+
 endif
