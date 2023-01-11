@@ -49,5 +49,4 @@ if [ -f ~/.shell_private ]; then
 fi
 
 # zsh syntax highlight  
-source /root/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/lumingfan/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
