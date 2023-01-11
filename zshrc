@@ -49,4 +49,5 @@ if [ -f ~/.shell_private ]; then
 fi
 
 # zsh syntax highlight  
+echo "source ${(q-)PWD}/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
