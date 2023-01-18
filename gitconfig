@@ -39,6 +39,7 @@
 	grd = log --graph --format=detail # graph detail
 	gra = log --graph --format=line --all # graph all
 	grad = log --graph --format=detail --all # graph all in detail
+    hist = log --pretty=format:'%h %ad | %s %d [%an]' --graph --date=short
 	sf = show --format=fuller --show-signature
 	sfw = show --format=fuller --color-words
 	sfs = show --format=fuller --stat
