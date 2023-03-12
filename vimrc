@@ -16,8 +16,10 @@ Plug 'dense-analysis/ale'
 Plug 'dense-analysis/ale'
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
+Plug 'ycm-core/YouCompleteMe'
 " " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
 
 
 set nocompatible " not vi compatible
