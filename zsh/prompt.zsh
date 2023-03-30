@@ -38,12 +38,12 @@ else
     fg[pink]=$fg[magenta]
 fi
 
-# Current directory, truncated to 3 path elements (or 4 when one of them is "~")
+# Current directory, truncated to 2 path elements (or 4 when one of them is "~")
 # The number of elements to keep can be specified as ${1}
 function PR_DIR() {
     local sub=${1}
     if [[ "${sub}" == "" ]]; then
-        sub=3
+        sub=2
     fi
     local len="$(expr ${sub} + 1)"
     local full="$(print -P "%d")"
