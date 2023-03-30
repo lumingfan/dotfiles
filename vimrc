@@ -147,13 +147,13 @@ else
 
     let g:solarized_termtrans=1
     " customized colors
-    " highlight SignColumn ctermbg=234
- "      highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
-   "     highlight StatusLineNC cterm=bold ctermfg=245 ctermbg=235
-    "let g:lightline = {'colorscheme': 'solarized'}
-    "highlight SpellBad cterm=underline
+    highlight SignColumn ctermbg=234
+    highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
+    highlight StatusLineNC cterm=bold ctermfg=245 ctermbg=235
+    let g:lightline = {'colorscheme': 'solarized'}
+    highlight SpellBad cterm=underline
     " patches
-    "highlight CursorLineNr cterm=NONE
+    highlight CursorLineNr cterm=NONE
 endif
 
 
