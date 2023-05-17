@@ -2,6 +2,7 @@
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " Declare the list of plugins.
+Plug 'craigemery/vim-autotag'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/seoul256.vim'
