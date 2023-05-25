@@ -4,8 +4,11 @@
 
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-eval `dircolors ~/.dir_colors`
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+if whence dircolors >/dev/null; then
+    eval `dircolors ~/.dir_colors`
+else
+    export LSCOLORS=exfxfeaeBxxehehbadacea
+fi
 
 if [[ "$(tput colors)" == "256" ]]; then
     ZSH_HIGHLIGHT_STYLES[default]=none
