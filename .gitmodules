@@ -25,7 +25,7 @@
 	url = https://github.com/junegunn/seoul256.vim
 [submodule "vim/plugged/syntastic"]
 	path = vim/plugged/syntastic
-	url = https://github.com/vim-syntastic/syntastic
+	url = https://github.com/scrooloose/syntastic
 [submodule "vim/plugged/tabular"]
 	path = vim/plugged/tabular
 	url = https://github.com/godlygeek/tabular
