@@ -32,9 +32,6 @@
 [submodule "vim/plugged/vim-autotag"]
 	path = vim/plugged/vim-autotag
 	url = https://github.com/craigemery/vim-autotag
-[submodule "vim/plugged/vim-colors-solarized"]
-	path = vim/plugged/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "vim/plugged/vim-fugitive"]
 	path = vim/plugged/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
@@ -47,6 +44,9 @@
 [submodule "vim/plugged/vim-sensible"]
 	path = vim/plugged/vim-sensible
 	url = https://github.com/tpope/vim-sensible
+[submodule "vim/plugged/vim-colors-solarized"]
+	path = vim/plugged/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
 [submodule "emacs.d/vendor/use-package"]
 	path = emacs.d/vendor/use-package
 	url = https://github.com/jwiegley/use-package
@@ -106,7 +106,7 @@
 	path = emacs.d/vendor/evil-easymotion
 	url = https://github.com/PythonNut/evil-easymotion
 [submodule "zsh/plugins/dircolors-solarized"]
-	path = shell/plugins/dircolors-solarized
+	path = zsh/plugins/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
 [submodule "zsh/plugins/zsh-syntax-highlighting"]
 	path = zsh/plugins/zsh-syntax-highlighting
