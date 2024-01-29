@@ -54,7 +54,6 @@ if [ ! -f ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting
 fi  
 source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-#~/clash/clash-linux-amd64-v1.10.0 -f youtulink3.top.yaml -d ~/clash/. > /dev/null 2>&1 &
-~/clash/clash-linux-amd64-v1.10.0 -f youtulink3.top.yaml -d ~/clash/. &
+~/clash/clash-linux-amd64-v1.10.0 -f ~/clash/youtulink3.top.yaml -d ~/clash/. > /dev/null 2>&1 &
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 
