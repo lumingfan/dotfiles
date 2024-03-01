@@ -54,6 +54,14 @@ if [ ! -f ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting
 fi  
 source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-~/clash/clash-linux-amd64-v1.10.0 -f ~/clash/youtulink3.top.yaml -d ~/clash/. > /dev/null 2>&1 &
+#~/clash/clash-linux-amd64-v1.10.0 -f ~/clash/youtulink3.top.yaml -d ~/clash/. > /dev/null 2>&1 &
+# docker pull dreamacro/clash
+# docker pull haishanh/yacd
+# docker run -d --name=clash -v "$PWD/config.yaml:/root/.config/clash/config.yaml" -p "7890:7890" -p "9090:9090" --restart=unless-stopped dreamacro/clash
+# docker run -p 1234:80 -d --name clash-dashboard haishanh/yacd
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
