@@ -1,0 +1,30 @@
+{
+    // Theme
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Material Theme Lighter High Contrast",
+
+    // Debug:
+    "debug.allowBreakpointsEverywhere": true,
+    
+    // Editor:
+    "editor.fontSize": 16,
+    "editor.guides.bracketPairs": true,
+    "editor.wordWrapColumn": 80,
+    "terminal.integrated.fontSize": 16,
+
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.letterSpacing": 0.1,
+    "editor.fontLigatures": true,
+    "editor.smoothScrolling": true,
+
+
+    // Window
+    "window.zoomLevel": -0.6,
+    
+    // Files:
+    "files.autoSave": "afterDelay",
+    
+    // Cmake:
+    "cmake.options.statusBarVisibility": "visible",
+    "cmake.configureOnOpen": true,
+}

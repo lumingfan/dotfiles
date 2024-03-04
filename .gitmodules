@@ -5,12 +5,16 @@
 [submodule "vim/plugged/YouCompleteMe"]
 	path = vim/plugged/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe
+	ignore = dirty
 [submodule "vim/plugged/ack.vim"]
 	path = vim/plugged/ack.vim
+	ignore = dirty
 	url = https://github.com/mileszs/ack.vim
+	ignore = dirty
 [submodule "vim/plugged/ale"]
 	path = vim/plugged/ale
 	url = https://github.com/dense-analysis/ale
+	ignore = dirty
 [submodule "vim/plugged/lightline.vim"]
 	path = vim/plugged/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
