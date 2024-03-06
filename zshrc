@@ -87,3 +87,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # export qmake path
 # export PATH=$PATH:/Users/lumingfan/Software/qt6/qtbase/bin
+#
+export GPG_TTY=$(tty)

@@ -96,6 +96,9 @@
 
 [credential]
 	helper = cache --timeout=3600
+	helper = 
+	helper = /usr/local/bin/git-credential-manager
+	credentialStore = gpg
 
 [grep]
 	lineNumber = true
@@ -121,3 +124,5 @@
 # Allow local customizations in the .gitconfig_local file
 [include]
 	path = ~/.gitconfig_local
+[credential "https://dev.azure.com"]
+	useHttpPath = true
