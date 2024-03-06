@@ -54,13 +54,6 @@ if [ ! -f ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting
 fi  
 source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-#~/clash/clash-linux-amd64-v1.10.0 -f ~/clash/youtulink3.top.yaml -d ~/clash/. > /dev/null 2>&1 &
-# docker pull dreamacro/clash
-# docker pull haishanh/yacd
-# docker run -d --name=clash -v "$PWD/config.yaml:/root/.config/clash/config.yaml" -p "7890:7890" -p "9090:9090" --restart=unless-stopped dreamacro/clash
-# docker run -p 1234:80 -d --name clash-dashboard haishanh/yacd
-export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -68,22 +61,23 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # <<< conda initialize <<<
-# export PIP_REQUIRE_VIRTUALENV=false
+export PIP_REQUIRE_VIRTUALENV=false
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/Users/lumingfan/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/Users/lumingfan/miniconda3/etc/profile.d/conda.sh" ]; then
-#         . "/Users/lumingfan/miniconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/Users/lumingfan/miniconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
+__conda_setup="$('/Users/lumingfan/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/lumingfan/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/lumingfan/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/lumingfan/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
 # <<< conda initialize <<<
 
 # export qmake path
-# export PATH=$PATH:/Users/lumingfan/Software/qt6/qtbase/bin
+export PATH=$PATH:/Users/lumingfan/Software/qt6/qtbase/bin
+
