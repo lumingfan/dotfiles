@@ -55,6 +55,7 @@ fi
 source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #~/clash/clash-linux-amd64-v1.10.0 -f ~/clash/youtulink3.top.yaml -d ~/clash/. > /dev/null 2>&1 &
+# !!! set external-controller: '0.0.0.0:9090' in config.yaml
 # docker pull dreamacro/clash
 # docker pull haishanh/yacd
 # docker run -d --name=clash -v "$PWD/config.yaml:/root/.config/clash/config.yaml" -p "7890:7890" -p "9090:9090" --restart=unless-stopped dreamacro/clash
