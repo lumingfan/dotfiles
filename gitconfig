@@ -17,7 +17,7 @@
 	grd = log --graph --format=detail # graph detail
 	gra = log --graph --format=line --all # graph all
 	grad = log --graph --format=detail --all # graph all in detail
-    hist = log --pretty=format:'%h %ad | %s %d [%an]' --graph --date=short
+    hist = log --pretty=format:'%C(bold yellow)%h%C(reset) %C(bold green)%ad%C(reset) %C(red)|%C(reset) %C(black)%s%C(reset) %C(bold cyan)%d%C(reset) %C(reset)%C(bold magenta)[%an]%C(reset)' --graph --date=short 
 	sf = show --format=fuller --show-signature
 	sfw = show --format=fuller --color-words
 	sfs = show --format=fuller --stat
@@ -30,7 +30,6 @@
 	upgrade-submodules = submodule update --init --remote
 	empty-tree-hash = hash-object -t tree /dev/null
 	root = rev-parse --show-toplevel
-	ctags = ! "ctg() { trap \"rm -f .git/tags.$$\" EXIT; ctags --tag-relative -Rf.git/tags.$$ --exclude=.git; mv .git/tags.$$ .git/tags; }; ctg"
 	tar = ! "tar() { git archive --format tar --prefix=\"${PWD##*/}/\" HEAD -o ${1}; }; tar"
 	targz = ! "targz() { git archive --format tar.gz --prefix=\"${PWD##*/}/\" HEAD -o ${1}; }; targz"
 	zip = ! "zip() { git archive --format zip --prefix=\"${PWD##*/}/\" HEAD -o ${1}; }; zip"

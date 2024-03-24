@@ -90,3 +90,6 @@ export NVM_DIR="$HOME/.nvm"
 # export PATH=$PATH:/Users/lumingfan/Software/qt6/qtbase/bin
 #
 export GPG_TTY=$(tty)
+
+alias sudo='sudo '
+alias pintos-up="docker run -it --rm --name pintos --mount type=bind,source=/home/ubuntu/cs/CS162/project/pintos,target=/home/PKUOS/pintos pkuflyingpig/pintos bash"

@@ -2,149 +2,37 @@
 	path = .dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "vim/plugged/YouCompleteMe"]
-	path = vim/plugged/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe
-	ignore = dirty
-[submodule "vim/plugged/ack.vim"]
-	path = vim/plugged/ack.vim
-	ignore = dirty
-	url = https://github.com/mileszs/ack.vim
-	ignore = dirty
-[submodule "vim/plugged/ale"]
-	path = vim/plugged/ale
-	url = https://github.com/dense-analysis/ale
+[submodule "vim/plugged/syntastic"]
+	path = vim/plugged/syntastic
+	url = https://github.com/scrooloose/syntastic
 	ignore = dirty
 [submodule "vim/plugged/lightline.vim"]
 	path = vim/plugged/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
-[submodule "vim/plugged/nerdtree"]
-	path = vim/plugged/nerdtree
-	url = https://github.com/preservim/nerdtree
-[submodule "vim/plugged/onedark.vim"]
-	path = vim/plugged/onedark.vim
-	url = https://github.com/joshdick/onedark.vim
-[submodule "vim/plugged/seoul256.vim"]
-	path = vim/plugged/seoul256.vim
-	url = https://github.com/junegunn/seoul256.vim
-[submodule "vim/plugged/syntastic"]
-	path = vim/plugged/syntastic
-	url = https://github.com/scrooloose/syntastic
+	ignore = dirty
 [submodule "vim/plugged/tabular"]
 	path = vim/plugged/tabular
 	url = https://github.com/godlygeek/tabular
-[submodule "vim/plugged/vim-autotag"]
-	path = vim/plugged/vim-autotag
-	url = https://github.com/craigemery/vim-autotag
-[submodule "vim/plugged/vim-fugitive"]
-	path = vim/plugged/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
-[submodule "vim/plugged/vim-markdown"]
-	path = vim/plugged/vim-markdown
-	url = https://github.com/preservim/vim-markdown
+	ignore = dirty
 [submodule "vim/plugged/vim-rainbow"]
 	path = vim/plugged/vim-rainbow
 	url = https://github.com/frazrepo/vim-rainbow
+	ignore = dirty
 [submodule "vim/plugged/vim-sensible"]
 	path = vim/plugged/vim-sensible
 	url = https://github.com/tpope/vim-sensible
+	ignore = dirty
 [submodule "vim/plugged/vim-colors-solarized"]
 	path = vim/plugged/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
-[submodule "emacs.d/vendor/use-package"]
-	path = emacs.d/vendor/use-package
-	url = https://github.com/jwiegley/use-package
-[submodule "emacs.d/vendor/PG"]
-	path = emacs.d/vendor/PG
-	url = https://github.com/ProofGeneral/PG
-[submodule "emacs.d/vendor/evil"]
-	path = emacs.d/vendor/evil
-	url = https://github.com/emacs-evil/evil
-[submodule "emacs.d/vendor/editorconfig-emacs"]
-	path = emacs.d/vendor/editorconfig-emacs
-	url = https://github.com/editorconfig/editorconfig-emacs
-[submodule "emacs.d/vendor/emacs-color-theme-solarized"]
-	path = emacs.d/vendor/emacs-color-theme-solarized
-	url = https://github.com/sellout/emacs-color-theme-solarized
-[submodule "emacs.d/vendor/fiplr"]
-	path = emacs.d/vendor/fiplr
-	url = https://github.com/grizzl/fiplr
-[submodule "emacs.d/vendor/grizzl"]
-	path = emacs.d/vendor/grizzl
-	url = https://github.com/grizzl/grizzl
-[submodule "emacs.d/vendor/packed"]
-	path = emacs.d/vendor/packed
-	url = https://github.com/tarsius/packed
-[submodule "emacs.d/vendor/dash.el"]
-	path = emacs.d/vendor/dash.el
-	url = https://github.com/magnars/dash.el
-[submodule "emacs.d/vendor/auto-compile"]
-	path = emacs.d/vendor/auto-compile
-	url = https://github.com/tarsius/auto-compile
-[submodule "emacs.d/vendor/emacs-neotree"]
-	path = emacs.d/vendor/emacs-neotree
-	url = https://github.com/jaypei/emacs-neotree
-[submodule "emacs.d/vendor/company-mode"]
-	path = emacs.d/vendor/company-mode
-	url = https://github.com/company-mode/company-mode
-[submodule "emacs.d/vendor/linum-relative"]
-	path = emacs.d/vendor/linum-relative
-	url = https://github.com/coldnew/linum-relative
-[submodule "emacs.d/vendor/company-coq"]
-	path = emacs.d/vendor/company-coq
-	url = https://github.com/cpitclaudel/company-coq
-[submodule "emacs.d/vendor/company-math"]
-	path = emacs.d/vendor/company-math
-	url = https://github.com/vspinu/company-math
-[submodule "emacs.d/vendor/math-symbol-lists"]
-	path = emacs.d/vendor/math-symbol-lists
-	url = https://github.com/vspinu/math-symbol-lists
-[submodule "emacs.d/vendor/yasnippet"]
-	path = emacs.d/vendor/yasnippet
-	url = https://github.com/joaotavora/yasnippet
-	ignore = untracked
-[submodule "emacs.d/vendor/avy"]
-	path = emacs.d/vendor/avy
-	url = https://github.com/abo-abo/avy
-[submodule "emacs.d/vendor/evil-easymotion"]
-	path = emacs.d/vendor/evil-easymotion
-	url = https://github.com/PythonNut/evil-easymotion
+	ignore = dirty
 [submodule "zsh/plugins/dircolors-solarized"]
 	path = zsh/plugins/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
+	ignore = dirty
 [submodule "zsh/plugins/zsh-syntax-highlighting"]
 	path = zsh/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "zsh/plugins/zsh-completions"]
 	path = zsh/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
-[submodule "irssi/scripts/vendor/irssi-smartfilter"]
-	path = irssi/scripts/vendor/irssi-smartfilter
-	url = https://github.com/lifeforms/irssi-smartfilter
-[submodule "jupyter/nbextensions/jupyter-vim-binding"]
-	path = jupyter/nbextensions/jupyter-vim-binding
-	url = https://github.com/lambdalisue/jupyter-vim-binding
-[submodule "emacs.d/vendor/racket-mode"]
-	path = emacs.d/vendor/racket-mode
-	url = https://github.com/greghendershott/racket-mode
-[submodule "emacs.d/vendor/evil-surround"]
-	path = emacs.d/vendor/evil-surround
-	url = https://github.com/emacs-evil/evil-surround
-[submodule "emacs.d/vendor/goto-chg"]
-	path = emacs.d/vendor/goto-chg
-	url = https://github.com/emacs-evil/goto-chg
-[submodule "emacs.d/vendor/pos-tip"]
-	path = emacs.d/vendor/pos-tip
-	url = https://github.com/pitkali/pos-tip
-[submodule "emacs.d/vendor/fstar-mode.el"]
-	path = emacs.d/vendor/fstar-mode.el
-	url = https://github.com/fstarlang/fstar-mode.el
-[submodule "emacs.d/vendor/quick-peek"]
-	path = emacs.d/vendor/quick-peek
-	url = https://github.com/cpitclaudel/quick-peek
-[submodule "emacs.d/vendor/flycheck"]
-	path = emacs.d/vendor/flycheck
-	url = https://github.com/flycheck/flycheck
-[submodule "emacs.d/vendor/company-quickhelp"]
-	path = emacs.d/vendor/company-quickhelp
-	url = https://github.com/company-mode/company-quickhelp

@@ -26,7 +26,7 @@
     // Files:
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 100,
-
+    // "C_Cpp.intelliSenseEngine": "Tag Parser",
 
     // Auto-Complete
     "editor.quickSuggestions": {
@@ -35,10 +35,14 @@
         "strings": false
     },
     "editor.quickSuggestionsDelay": 10,
-    "C_Cpp.intelliSenseEngine": "Tag Parser",
 
     
     // Cmake:
     "cmake.options.statusBarVisibility": "visible",
     "cmake.configureOnOpen": true,
+    "cmake.showOptionsMovedNotification": false,
+    "[cpp]": {
+        "files.autoSave": "afterDelay"
+    },
+    "git.openRepositoryInParentFolders": "always",
 }

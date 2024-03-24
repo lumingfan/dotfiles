@@ -10,22 +10,13 @@ endif
 
 
 " Declare the list of plugins.
-Plug 'craigemery/vim-autotag'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-sensible'
-Plug 'junegunn/seoul256.vim'
 Plug 'scrooloose/syntastic'
-Plug 'tpope/vim-fugitive'
 
-Plug 'mileszs/ack.vim'
 Plug 'frazrepo/vim-rainbow'
 Plug 'altercation/vim-colors-solarized'
-Plug 'joshdick/onedark.vim'
-Plug 'dense-analysis/ale'
-Plug 'dense-analysis/ale'
 Plug 'godlygeek/tabular'
-Plug 'preservim/vim-markdown'
-Plug 'ycm-core/YouCompleteMe'
 " " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -189,19 +180,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " rainbow
 let g:rainbow_active = 1
-" nerdtree
-nnoremap <Leader>n :NERDTreeToggle<CR>
-nnoremap <Leader>f :NERDTreeFind<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-" Exit Vim if NERDTree is the only window remaining in the only tab.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-
-"youcompleteme
-set completeopt=menuone,noinsert,noselect
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_key_invoke_completion = '<C-Space>'
 
 " buffergator
 let g:buffergator_suppress_keymaps = 1
@@ -218,13 +196,6 @@ nnoremap ; :CtrlPBuffer<CR>
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_show_hidden = 1
 
-" ag / ack.vim
-command -nargs=+ Gag Gcd | Ack! <args>
-nnoremap K :Gag "\b<C-R><C-W>\b"<CR>:cw<CR>
-if executable('ag')
-    let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-    let g:ackprg = 'ag --vimgrep'
-endif
 
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
@@ -257,29 +228,6 @@ map zg/ <Plug>(incsearch-easymotion-stay)
 nnoremap <Leader>w :ArgWrap<CR>
 
 noremap <Leader>x :OverCommandLine<CR>
-
-" markdown
-let g:markdown_fenced_languages = [
-    \ 'bash=sh',
-    \ 'c',
-    \ 'coffee',
-    \ 'erb=eruby',
-    \ 'javascript',
-    \ 'json',
-    \ 'perl',
-    \ 'python',
-    \ 'ruby',
-    \ 'yaml',
-    \ 'go',
-    \ 'racket',
-    \ 'haskell',
-    \ 'rust',
-\]
-let g:markdown_syntax_conceal = 0
-let g:markdown_folding = 1
-
-" fugitive
-set tags^=.git/tags;~
 
 "---------------------
 " Local customizations
